@@ -1,0 +1,151 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+.section-title-main {
+    font-size: 2em;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in;
+    color: black;
+    font-weight: bolder;
+}
+
+.section-title {
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+    color: black;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 1s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-header {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-header.silver {
+    background: #C0C0C0;
+}
+
+.card-header.gold {
+    background: #FFD700;
+}
+
+.card-header.diamond {
+    background: #B9F2FF;
+}
+
+.card-header.platinum {
+    background: palevioletred;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: black;
+}
+
+.card-content p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.card-content .tag {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 3px 10px;
+    background: #f3f3f3;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.card-content .tag i {
+    margin-right: 8px;
+    color: #ff6b6b;
+}
+
+.card-footer {
+    padding: 15px 20px;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-footer a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card-footer .view-program {
+    background: #ff6b6b;
+    color: white;
+    flex: 1 1 45%;
+    text-align: center;
+    margin-right: 3px;
+}
+
+.card-footer .syllabus {
+    background: #fff;
+    border: 2px solid #ff6b6b;
+    color: #ff6b6b;
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
