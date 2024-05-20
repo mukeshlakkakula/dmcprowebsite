@@ -17,8 +17,10 @@ const Footer = () => {
                             <a href="#"><i className="fa fa-facebook-square"></i></a>
                             <a href="#"><i className="fa fa-twitter-square"></i></a>
                             <a href="#"><i className="fa fa-instagram"></i></a>
+                            <a href="#"><i className="fa fa-telegram"></i></a>
                             <a href="#"><i className="fa fa-youtube"></i></a>
                             <a href="#"><i className="fa fa-whatsapp"></i></a>
+                            <a href="#"><i className="fa fa-snapchat-square"></i></a>
                             <a href="#"><i className="fa fa-github-square"></i></a>
                         </div>
                     </div>
