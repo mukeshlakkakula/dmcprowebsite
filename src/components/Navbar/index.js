@@ -14,7 +14,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 const Navbar = (props) => {
   const [isFixed, setIsFixed] = useState(false);
   const handleScroll = () => {
-    if (window.scrollY > 65) {
+    if (window.scrollY > 25) {
       setIsFixed(true);
     } else {
       setIsFixed(false);

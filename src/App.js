@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div className="p-2 ">
+        <div className="w-100">
           <Navbar />
         </div>
 
