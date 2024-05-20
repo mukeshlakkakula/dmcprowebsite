@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import video from "./React App - Google Chrome 2023-09-03 18-31-03.mp4";
+import video from "./WhatsApp Video 2024-05-20 at 7.12.52 PM.mp4";
 const Video = () => {
   return (
     <div className="w-100 vidContainer">
