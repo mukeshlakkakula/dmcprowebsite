@@ -21,7 +21,6 @@ const Footer = () => {
                             <a href="#"><i className="fa fa-youtube"></i></a>
                             <a href="#"><i className="fa fa-whatsapp"></i></a>
                             <a href="#"><i className="fa fa-snapchat-square"></i></a>
-                            <a href="#"><i className="fa fa-github-square"></i></a>
                         </div>
                     </div>
                     <div className="about-us">

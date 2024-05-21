@@ -27,7 +27,13 @@ body {
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-
+.multi-color-text {
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text; /* Standard */
+    -webkit-text-fill-color: transparent; /* For Safari/Chrome */
+    color: transparent; /* Standard */
+  }
 .card {
     background: white;
     border-radius: 10px;

@@ -4,7 +4,7 @@ import './index.css';
 const DiscoverCourses = () => {
   return <div className="App">
   <div className="section">
-    <h2 className="section-title-main">EXPLORE OUR COURSES</h2>
+  <h2 className="section-title-main">EXPLORE <span className="multi-color-text">OUR COURSES</span></h2>
       <h2 className="section-title">Silver Section</h2>
       <div className="container">
           <div className="card">

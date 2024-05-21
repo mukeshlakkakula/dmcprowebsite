@@ -1,0 +1,93 @@
+.imageSocialContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.influHeading {
+  font-size: 5rem;
+  font-weight: 600;
+
+  background: linear-gradient(to right, #0b0757, #8ae07ecf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+  background-clip: text;
+  color: transparent;
+}
+
+.butonB1 {
+  min-width: 190px;
+  padding: 15px;
+}
+.influpara {
+  font-weight: bold;
+  color: #5b4f4fb6;
+}
+
+.introLeftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.influButtonsContainer {
+  display: flex;
+  gap: 30px;
+}
+.imgSocial {
+  width: 520px;
+  height: 517px;
+}
+
+.IntroFullContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: radial-gradient(circle, #d6d6db, #47476e6a);
+  padding: 0px;
+  padding: 10px;
+}
+
+.influHead3 {
+  color: #0b0757;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.infludes3 {
+  color: #198754;
+  font-size: 25px;
+}
+
+.viewsmpbtn {
+  border-style: none;
+
+  color: #0b07579c;
+  font-weight: bold;
+}
+@media (max-width: 786px) {
+  .IntroFullContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  .imgSocial {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+  .introLeftContainer {
+    padding: 10px;
+  }
+  .influHeading {
+    font-size: 35px;
+  }
+  .influHead3 {
+    font-size: 30px;
+  }
+  .infludes3 {
+    font-size: 20px;
+  }
+}

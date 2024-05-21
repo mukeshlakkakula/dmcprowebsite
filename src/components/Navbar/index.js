@@ -1,162 +1,36 @@
-// import React from "react";
+// src/components/Navbar.js
+import React, { useState } from 'react';
+import './index.css';
 
-// const Navbar = () => {
-//   return <div>Navbar</div>;
-// };
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
 
-// export default Navbar;
-
-import { Link } from "react-router-dom";
-
-import "./index.css";
-import { useEffect, useState } from "react";
-import { FaPhoneAlt } from "react-icons/fa";
-const Navbar = (props) => {
-  const [isFixed, setIsFixed] = useState(false);
-  const handleScroll = () => {
-    if (window.scrollY > 25) {
-      setIsFixed(true);
-    } else {
-      setIsFixed(false);
-    }
-  };
-
-  const savedRoute = localStorage.getItem("currentRoute");
-  console.log(savedRoute);
-  const [activeRoute, setActiveRoute] = useState(savedRoute);
-  const [activeModal, setActiveModal] = useState(false);
-
-  const modalVal = (
-    <div className="modal_content">
-      <span>Success! We'll call you back shortly.</span>
-      <span onClick={() => setActiveModal(false)}>&times;</span>
-    </div>
-  );
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
     };
-  }, []);
-  useEffect(() => {
-    setActiveModal(false);
-  }, [activeRoute]);
 
-  const Showmodal = activeModal ? modalVal : "";
-  return (
-    <div className="heaaderWithShowModal">
-      <div className={`headerContainer ${isFixed ? "fixed" : ""}`}>
-        <div>
-          <Link
-            to="/"
-            onClick={() => {
-              setActiveRoute("home");
-            }}
-          >
-            <img
-              value="home"
-              className="logoIcon"
-              src="./DMCpro.logo-removebg-preview.png"
-              alt="logo"
-            />
-          </Link>
-        </div>
-        <div>
-          <button
-            id="openModalBtn"
-            className="reqBtn02 "
-            value="Request Call Back"
-          >
-            <FaPhoneAlt /> Get Started
-          </button>
-        </div>
-
-        <div className="headerInsideContainer">
-          <Link
-            to="/"
-            onClick={() => {
-              setActiveRoute("home");
-            }}
-          >
-            <button
-              className={activeRoute === "home" ? "activeBtn" : "notActiveBtn"}
-              value="home"
-            >
-              Home
-            </button>
-          </Link>
-          <Link
-            to="/Services"
-            onClick={() => {
-              setActiveRoute("Services");
-            }}
-          >
-            <button
-              className={
-                activeRoute === "Services" ? "activeBtn" : "notActiveBtn"
-              }
-              value="Services"
-            >
-              Services
-            </button>
-          </Link>
-          {/* <Link to="/whatwilllearn">
-            <button
-              className={
-                activeRoute === "whatwilllearn" ? "activeBtn" : "notActiveBtn"
-              }
-              value="whatwilllearn"
-              onClick={() => {
-                setActiveRoute("whatwilllearn");
-              }}
-            >
-              What Will Learn
-            </button>
-          </Link>
-          <Link to="/placementassistance">
-            <button
-              className={
-                activeRoute === "placementassistance"
-                  ? "activeBtn"
-                  : "notActiveBtn"
-              }
-              value="placementassistance"
-              onClick={() => {
-                setActiveRoute("placementassistance");
-              }}
-            >
-              Placement Assistance
-            </button>
-          </Link> */}
-          <Link
-            to="/customers"
-            onClick={() => {
-              setActiveRoute("customers");
-            }}
-          >
-            <button
-              className={
-                activeRoute === "customers" ? "activeBtn" : "notActiveBtn"
-              }
-              value="customers"
-            >
-              customers
-            </button>
-          </Link>
-        </div>
-        <div>
-          <button
-            id="openModalBtn"
-            className="reqBtn "
-            value="Request Call Back"
-          >
-            <FaPhoneAlt /> Get Started
-          </button>
-        </div>
-      </div>
-      {Showmodal}
-    </div>
-  );
+    return (
+        <header className="header">
+            <nav className="navbar">
+                <div className="logo-container">
+                    <img src="https://res.cloudinary.com/djlhr4ycg/image/upload/v1716195912/DMCpro.logo-removebg-preview_k1uasp.png" alt="Company Logo" className="logo-img" />
+                    <div className="company-name">Dmcpro.in</div>
+                </div>
+                <div className="menu-icon" onClick={toggleMenu}>
+                    <div className={`bar1 ${isOpen ? 'change' : ''}`}></div>
+                    <div className={`bar2 ${isOpen ? 'change' : ''}`}></div>
+                    <div className={`bar3 ${isOpen ? 'change' : ''}`}></div>
+                </div>
+                <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#example">Example</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    );
 };
 
 export default Navbar;
