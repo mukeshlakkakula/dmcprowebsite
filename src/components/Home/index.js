@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import Video from "../Video";
 import Intro from "../Intro";
-import Exibitors from "../Exibitors";
+import Exibitors from "../Exibitors/exibitors";
 import User from "../User";
 import DiscoverCourses from "../DiscoverCourses";
 import HighlightsYoutubeVideos from "../HighlightsYoutubeVideos";
