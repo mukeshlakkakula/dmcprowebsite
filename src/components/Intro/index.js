@@ -6,12 +6,11 @@ const Intro = () => {
     <div className="IntroFullContainer">
       <div className="introLeftContainer">
         <h1 className="influHeading">
-          Influencer marketing
-          <br />
+          Influencer marketing <br className="br001" />
           for every business
         </h1>
         <p className="influpara">
-          Get top influencers to promote your brand and <br />
+          Get top influencers to promote your brand and <br className="br001" />
           supercharge your sales starting at just ₹5000
         </p>
         <div className="influButtonsContainer">
