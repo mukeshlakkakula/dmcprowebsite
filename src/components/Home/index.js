@@ -16,6 +16,7 @@ const Home = () => (
     <section id="about">
       <Intro />
     </section>
+
     <div className="homeinnerContainer">
       <section>
         <Exibitors />
