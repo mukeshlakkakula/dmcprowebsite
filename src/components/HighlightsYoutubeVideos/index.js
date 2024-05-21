@@ -9,10 +9,10 @@ const VideoContainer = styled.div`
 `;
 
 const Head = styled.h1`
-  font-size: 2.4vw;
+  font-size: 2.2vw;
   font-weight: bold;
-  color: orange;
-  margin-left: 20px;
+  color: black;
+  margin-left: 0px;
   @media (max-width: 768px) {
     font-size: 5.5vw;
   }

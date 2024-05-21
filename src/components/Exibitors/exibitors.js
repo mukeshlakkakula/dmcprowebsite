@@ -37,6 +37,7 @@ const Heading = styled.h1`
     font-size: 30px;
     color: gray;
     font-weight: bold;
-    margin: 30px;
+    margin: 20px;
+    margin-left: 0px;
     
 `;

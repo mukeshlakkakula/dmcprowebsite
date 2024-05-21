@@ -82,6 +82,8 @@ const Head = styled.h4`
     font-size: 16px;
     margin-top: 10px;
     text-align: center;
+    color: Black;
+    font-weight: 500;
 `;
 
 const ItemImg = styled.img`
