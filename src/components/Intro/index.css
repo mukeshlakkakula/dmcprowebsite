@@ -1,3 +1,60 @@
+.imageCoroselContainer {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.carousel {
+  object-fit: cover;
+
+  background-color: transparent;
+}
+.carouselContainer {
+  padding: 10px;
+  margin: auto;
+  width: 60%;
+}
+.img001 {
+  width: 80%;
+  margin: auto;
+}
+.head3 {
+  color: #0b0757;
+  font-size: 40px;
+  line-height: 44px;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.slider01 {
+  width: 60%;
+  margin: auto;
+}
+.para3 {
+  color: #7c7c81;
+  font-size: 20px;
+}
+
+@media (max-width: 786px) {
+  .carousel {
+    width: 100vw;
+
+    object-fit: cover;
+  }
+  .head3 {
+    font-size: 30px;
+  }
+  .slider01 {
+    width: 100%;
+    padding-top: 15px;
+    margin: auto;
+  }
+  .imageCoroselContainer {
+    width: 100vw;
+    height: 210px;
+  }
+}
+/* carouselStyled at top */
+
 .imageSocialContainer {
   display: flex;
   justify-content: center;
