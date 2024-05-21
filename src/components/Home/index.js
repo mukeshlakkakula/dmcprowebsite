@@ -13,31 +13,31 @@ import Footer from "../Footer";
 const Home = () => (
   <div>
     <Video />
-    <div className="homeinnerContainer">
-      <section id="about">
+    <section id="about">
       <Intro />
+    </section>
+    <div className="homeinnerContainer">
+      <section>
+        <Exibitors />
       </section>
       <section>
-      <Exibitors />
-      </section>
-      <section>
-      <User />
+        <User />
       </section>
       <section id="services">
-      <DiscoverCourses />
+        <DiscoverCourses />
       </section>
       <section>
-      <HighlightsYoutubeVideos />
+        <HighlightsYoutubeVideos />
       </section>
       <section id="example">
-      <Testimonials/>
+        <Testimonials />
       </section>
       <section>
-      <AssociatesPartners />
+        <AssociatesPartners />
       </section>
     </div>
-    <section id="contact" >
-    <Footer/>
+    <section id="contact">
+      <Footer />
     </section>
   </div>
 );
