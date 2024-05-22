@@ -2,12 +2,14 @@ import React from "react";
 import "./index.css";
 const User = () => {
   return (
+  <div>
+    <h2 className="contact-us">CONTACT-US</h2>
     <div className="userFullContainer">
       <div>
         <div className="card" style={{ width: "18rem" }}>
           <div>
             <img
-              src="https://i.pinimg.com/564x/21/20/b0/2120b058cb9946e36306778243eadae5.jpg"
+              src="https://res.cloudinary.com/djlhr4ycg/image/upload/v1716402155/OIP_xo31nr.jpg"
               className="card-img-top"
               style={{ objectFit: "cover", width: "100%" }}
               alt="user"
@@ -89,6 +91,7 @@ const User = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

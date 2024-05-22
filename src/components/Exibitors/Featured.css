@@ -14,6 +14,7 @@
 .exheading{
   font-size: 20px;
   text-align: center;
+  color: black;
 }
 .container{
   display: flex;

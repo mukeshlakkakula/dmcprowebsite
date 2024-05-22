@@ -1,3 +1,7 @@
+/* Import slick-carousel CSS */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 .feedback {
   background: url("https://res.cloudinary.com/djlhr4ycg/image/upload/v1715320577/section-background_sxi9ha.jpg");
   background-position: center;
@@ -10,13 +14,6 @@
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 2px;
-}
-
-.label {
-  color: #131212;
-  font-size: 1.2rem;
-  margin-top: 2px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana, sans-serif';
 }
 
 .heading {
@@ -36,11 +33,6 @@
   animation: blink 1s infinite;
 }
 
-.client-info {
-  color: black;
-  padding-top: 8px;
-}
-
 @keyframes blink {
   0% {
     opacity: 0;
@@ -54,20 +46,16 @@
 }
 
 .voices {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  overflow: hidden;
 }
 
 .voice {
-  max-width: 300px;
   text-align: left;
   padding: 1.5rem;
   border-radius: 10px;
   background-color: rgba(249, 249, 249, 0.9);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  flex: 1 1 45%; /* Ensure items take up 45% of the container */
+  margin: 0 10px; /* Adds space between each slide */
 }
 
 .voice:hover {
@@ -95,7 +83,7 @@
   color: #131212;
 }
 
-.student-info {
+.client-info {
   color: #777;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
@@ -108,9 +96,59 @@
   font-size: 1.1rem;
 }
 
+.slick-prev, .slick-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px;
+  color: white;
+  content: '';
+}
+
+.slick-prev:before {
+  content: '◀'; /* Unicode character for left arrow */
+}
+
+.slick-next:before {
+  content: '▶'; /* Unicode character for right arrow */
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
 @media (max-width: 768px) {
   .voice {
-    max-width: 100%; /* Allow the items to take full width */
-    margin-bottom: 2rem;
+    padding: 1rem;
+    margin: 0 5px; /* Smaller margin for mobile view */
+  }
+  .slick-prev, .slick-next {
+    display: none; /* Hide arrows on mobile */
   }
 }

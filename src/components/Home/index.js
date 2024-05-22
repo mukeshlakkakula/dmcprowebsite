@@ -18,13 +18,12 @@ const Home = () => (
     </section>
 
     <div className="homeinnerContainer">
+    <section>
+        <Exibitors />
+      </section>
       <section>
         <User />
       </section>
-      <section>
-        <Exibitors />
-      </section>
-
       <section id="services">
         <DiscoverCourses />
       </section>

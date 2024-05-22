@@ -11,7 +11,7 @@ const Exibitors = () => {
   return (
     <>
       <section className='featured'>
-      <Heading>Exibitors</Heading>
+      <Heading>OUR SPOTLIGHTS</Heading>
         <MainCon>
           <FeaturedCard />
         </MainCon>
@@ -35,9 +35,9 @@ const MainCon = styled.div`
 `;
 const Heading = styled.h1`
     font-size: 30px;
-    color: gray;
+    color: black;
     font-weight: bold;
     margin: 20px;
     margin-left: 0px;
-    
+    text-align: center;
 `;
