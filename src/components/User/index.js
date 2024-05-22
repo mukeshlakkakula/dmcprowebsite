@@ -20,7 +20,10 @@ const User = () => {
               bulk of the card's content.
             </p>
             <div style={{ display: "flex", gap: "10px" }}>
-              <a href="#" className="btn btn-success">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdCM82Nzia7KDCRPgOr7jf4GCfnnH-xjNylZNNd6GKKOLYueg/viewform?usp=sf_link"
+                className="btn btn-success"
+              >
                 User
               </a>
               <a href="#" className="btn btn-primary">
@@ -45,7 +48,10 @@ const User = () => {
               bulk of the card's content.
             </p>
             <div style={{ display: "flex", gap: "10px" }}>
-              <a href="#" className="btn btn-success">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdCM82Nzia7KDCRPgOr7jf4GCfnnH-xjNylZNNd6GKKOLYueg/viewform?usp=sf_link"
+                className="btn btn-success"
+              >
                 Employee
               </a>
               <a href="#" className="btn btn-primary">
@@ -70,7 +76,10 @@ const User = () => {
               bulk of the card's content.
             </p>
             <div style={{ display: "flex", gap: "10px" }}>
-              <a href="#" className="btn btn-success">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdCM82Nzia7KDCRPgOr7jf4GCfnnH-xjNylZNNd6GKKOLYueg/viewform?usp=sf_link"
+                className="btn btn-success"
+              >
                 Creator
               </a>
               <a href="#" className="btn btn-primary">
