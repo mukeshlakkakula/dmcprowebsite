@@ -1,0 +1,16 @@
+.userFullContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+@media (max-width: 786px) {
+  .userFullContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
