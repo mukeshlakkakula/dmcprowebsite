@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import ReactPlayer from 'react-player';
+import React from "react";
+import styled from "styled-components";
+import ReactPlayer from "react-player";
 
 const VideoContainer = styled.div`
   display: flex;
@@ -9,12 +9,13 @@ const VideoContainer = styled.div`
 `;
 
 const Head = styled.h1`
-  font-size: 2.2vw;
+  color: #0b0757;
   font-weight: bold;
-  color: black;
-  margin-left: 0px;
+  font-size: 40px;
+
   @media (max-width: 768px) {
-    font-size: 5.5vw;
+    font-size: 25px;
+    padding-left: 15px;
   }
 `;
 
@@ -48,18 +49,30 @@ const StyledReactPlayer = styled(ReactPlayer)`
 const HighlightsYoutubeVideos = () => {
   return (
     <>
-    <Head>Highlights And Youtube Videos</Head>
-    <VideoContainer>
-      <VideoWrapper>
-        <StyledReactPlayer url="https://youtu.be/n6ecdYd8T6o?si=1yEHrzS-pyJ5qm9x" width="98%" height="30%" />
-      </VideoWrapper>
-      <VideoWrapper>
-        <StyledReactPlayer url="https://youtu.be/n6ecdYd8T6o?si=1yEHrzS-pyJ5qm9x" width="98%" height="30%" />
-      </VideoWrapper>
-      <VideoWrapper>
-        <StyledReactPlayer url="https://youtu.be/n6ecdYd8T6o?si=1yEHrzS-pyJ5qm9x" width="98%" height="30%" />
-      </VideoWrapper>
-    </VideoContainer>
+      <Head>Highlights And Youtube Videos</Head>
+      <VideoContainer>
+        <VideoWrapper>
+          <StyledReactPlayer
+            url="https://youtu.be/n6ecdYd8T6o?si=1yEHrzS-pyJ5qm9x"
+            width="98%"
+            height="30%"
+          />
+        </VideoWrapper>
+        <VideoWrapper>
+          <StyledReactPlayer
+            url="https://youtu.be/n6ecdYd8T6o?si=1yEHrzS-pyJ5qm9x"
+            width="98%"
+            height="30%"
+          />
+        </VideoWrapper>
+        <VideoWrapper>
+          <StyledReactPlayer
+            url="https://youtu.be/n6ecdYd8T6o?si=1yEHrzS-pyJ5qm9x"
+            width="98%"
+            height="30%"
+          />
+        </VideoWrapper>
+      </VideoContainer>
     </>
   );
 };

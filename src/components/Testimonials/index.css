@@ -17,10 +17,9 @@
 }
 
 .heading {
-  color: #131212;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  color: #0b0757;
   font-weight: bold;
+  font-size: 40px;
 }
 
 .paragraph {
@@ -30,7 +29,7 @@
 }
 
 .blink {
-  animation: blink 1s infinite;
+  animation: blink 3s infinite;
 }
 
 @keyframes blink {
@@ -51,6 +50,7 @@
 
 .voice {
   text-align: left;
+
   padding: 1.5rem;
   border-radius: 10px;
   background-color: rgba(249, 249, 249, 0.9);
@@ -96,7 +96,8 @@
   font-size: 1.1rem;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 40px;
@@ -108,25 +109,28 @@
   transition: all 0.3s ease-in-out;
 }
 
-.slick-prev:hover, .slick-next:hover {
+.slick-prev:hover,
+.slick-next:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   font-size: 20px;
   color: white;
-  content: '';
+  content: "";
 }
 
 .slick-prev:before {
-  content: '◀'; /* Unicode character for left arrow */
+  content: "◀"; /* Unicode character for left arrow */
 }
 
 .slick-next:before {
-  content: '▶'; /* Unicode character for right arrow */
+  content: "▶"; /* Unicode character for right arrow */
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -144,11 +148,16 @@
 }
 
 @media (max-width: 768px) {
+  .heading {
+    font-size: 30px;
+    padding-left: 15px;
+  }
   .voice {
     padding: 1rem;
     margin: 0 5px; /* Smaller margin for mobile view */
   }
-  .slick-prev, .slick-next {
+  .slick-prev,
+  .slick-next {
     display: none; /* Hide arrows on mobile */
   }
 }
