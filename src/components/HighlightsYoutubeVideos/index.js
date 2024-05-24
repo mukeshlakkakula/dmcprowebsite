@@ -49,7 +49,7 @@ const StyledReactPlayer = styled(ReactPlayer)`
 const HighlightsYoutubeVideos = () => {
   return (
     <>
-      <Head>Highlights And Youtube Videos</Head>
+      <Head>Highlights & Youtube Videos</Head>
       <VideoContainer>
         <VideoWrapper>
           <StyledReactPlayer

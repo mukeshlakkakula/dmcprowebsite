@@ -18,16 +18,16 @@ const Home = () => (
     </section>
 
     <div className="homeinnerContainer">
-    <section>
+      <section>
         <Exibitors />
       </section>
-      <section>
+      <section className="sectionA1">
         <User />
       </section>
-      <section id="services">
+      <section id="services" className="sectionA1">
         <DiscoverCourses />
       </section>
-      <section>
+      <section className="sectionA1">
         <HighlightsYoutubeVideos />
       </section>
       <section id="example">
@@ -37,7 +37,7 @@ const Home = () => (
         <AssociatesPartners />
       </section>
     </div>
-    <section id="contact">
+    <section id="contact" className="sectionA1">
       <Footer />
     </section>
   </div>
