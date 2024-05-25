@@ -1,5 +1,6 @@
 .vidContainer {
   border: solid;
-  border-width: 0.5px;
-  margin-top: 2px;
+  border-width: 0.01px;
+  margin-top: 0px;
+  height:50%;
 }

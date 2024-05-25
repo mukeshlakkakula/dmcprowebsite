@@ -8,7 +8,10 @@ const Footer = () => {
       <section className="footer">
         <div className="container">
           <div className="detail">
-            <h3>Dmcpro.in</h3>
+          <div className="logo-contain">
+                    <img src="https://res.cloudinary.com/djlhr4ycg/image/upload/v1716195912/DMCpro.logo-removebg-preview_k1uasp.png" alt="Company Logo" className="logo-img" />
+                    <div className="company-name">Dmcpro.in</div>
+                </div>
             <p>
               Revolutionizing Digital Marketing with Authentic Engagement. At
               Dmcpro.in, we understand the importance of creating meaningful

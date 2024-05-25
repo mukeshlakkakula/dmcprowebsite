@@ -2,8 +2,40 @@
   padding: 20px;
   background-color: #fefefe;
 }
-.sectionA1 {
-  margin-top: 15px;
+/* Styling for the scroll-to-top button */
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #5eafd4;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scrollTop span {
+  display: block;
+}
+
+.scrollTop:hover {
+  opacity: 0.7;
+}
+
+/* Animation styles */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.scroll-animation.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 786px) {

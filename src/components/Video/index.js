@@ -8,7 +8,7 @@ const Video = () => {
         src={video}
         autoPlay
         type="video/mp4"
-        style={{ width: "100%" }}
+        style={{ width: "100%"}}
         loop
         muted
       >

@@ -16,7 +16,7 @@ const Intro = () => {
         swipeable={true}
         stopOnHover={false}
         showThumbs={false}
-        className="carousel "
+        className="carousel"
       >
         <div className="slider01">
           <div className="img001">

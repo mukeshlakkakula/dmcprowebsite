@@ -10,7 +10,7 @@ import { useSpring, animated } from 'react-spring';
 const BoldAnimatedDiv = styled(animated.div)`
   font-weight: bold;
   text-align: center;
-  color: red;  /* Change color to red */
+  color: red; 
 `;
 
 function Number({ n }) {
@@ -48,17 +48,18 @@ const featured = [
     cover: five,
     name: "State Tourism Boards",
     total: 2000,
+    hideOnMobile: true,
   }
 ];
 
 const FeaturedCard = () => {
   return (
     <>
-      {featured.map((items, index) => (
-        <Main key={index}>
-          <ItemImg src={items.cover} alt='exhibits' />
-          <Head>{items.name}</Head>
-          <Number n={items.total} />
+      {featured.map((item, index) => (
+        <Main key={index} hideOnMobile={item.hideOnMobile}>
+          <ItemImg src={item.cover} alt={item.name} />
+          <Head>{item.name}</Head>
+          <Number n={item.total} />
         </Main>
       ))}
     </>
@@ -71,6 +72,13 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   width: 150px;
+  ${(props) =>
+    props.hideOnMobile &&
+    `
+    @media (max-width: 768px) {
+      display: none;
+    }
+  `}
 `;
 
 const Head = styled.h4`

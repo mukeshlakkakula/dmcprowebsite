@@ -8,7 +8,7 @@ const Testimonials = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -33,7 +33,7 @@ const Testimonials = () => {
       <section className="feedback">
         <div className="container">
           <p className="paragraph">
-            <span className="blink" style={{ color: "white" }}>
+            <span className="blink" style={{ color: "white",fontWeight: "bold" }}>
               Hear from our clients about their experience with Dmcpro.in's
               digital marketing services.
             </span>
