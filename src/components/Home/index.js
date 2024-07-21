@@ -35,7 +35,7 @@ const Home = () => {
         const elementTop = element.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
         const isMobile = window.innerWidth <= 768; // Adjust breakpoint as needed
-        const offset = isMobile ? 100 : 400; // Adjust offset for mobile
+        const offset = isMobile ? 100 : 150; // Adjust offset for mobile
         if (elementTop < windowHeight - offset) {
           element.classList.add("animate");
         } else {
@@ -56,7 +56,7 @@ const Home = () => {
 
   return (
     <section id="home">
-      <div>            
+      <div>
         <section>
           <Video />
         </section>
